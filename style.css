@@ -304,6 +304,20 @@ html {
     }
 }
 
+.arrowsRemove-animation {
+    animation: arrowsRemove 1s ease-in-out forwards;
+}
+
+@keyframes arrowsRemove {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .OnegbCopy-animation{
     animation: OnegbCopy 1s ease-in-out forwards;
 }

@@ -73,13 +73,15 @@ function operationOneGb() {
     $(".Onegb").addClass("scaleUp-animation");
     setTimeout(() => {
         $(".copy1").addClass("textSlideRemove-animation");
-        $(".selector").addClass("selectorRemove-animation");
+        
         $(".Onegb").removeClass("scaleUp-animation");
         $(".Onegb").addClass("oneGbCardRemove-animation");
         $(".Twogb").addClass("twoGbCardSecondaryRemove-animation");
         setTimeout(()=>{
             $(".cta1").addClass("cta1Remove-animation");
-        },300);
+            $(".arrows").addClass("arrowsRemove-animation");
+            $(".selector").addClass("selectorRemove-animation");
+        },100);
 
         setTimeout(() => {
             $(".Onegb").addClass("hidden");
@@ -103,18 +105,18 @@ function operationTwoGb() {
      $(".Twogb").addClass("scaleUp-animation");
     setTimeout(() => {
         $(".copy1").addClass("textSlideRemove-animation");
-        $(".selector").addClass("selectorRemove-animation");
         $(".Twogb").removeClass("scaleUp-animation");
         $(".Onegb").addClass("oneGbCardSecondaryRemove-animation");
         $(".Twogb").addClass("twoGbCardRemove-animation");
         setTimeout(()=>{
             $(".cta1").addClass("cta1Remove-animation");
-        },300);
+            $(".arrows").addClass("arrowsRemove-animation");
+            $(".selector").addClass("selectorRemove-animation");
+        },100);
 
         setTimeout(() => {
             $(".Onegb").addClass("hidden");
             $(".Twogb").addClass("hidden");
-            $(".arrows").addClass("hidden");
 
             $(".TwogbCopy").removeClass("hidden");
             $(".buynow").removeClass("hidden");
