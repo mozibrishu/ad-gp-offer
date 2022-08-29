@@ -16,7 +16,7 @@ if (typeof window.orientation !== 'undefined') {
     // dragElementMobileRight(canG);
 }
 else {
-    // dragElement(selector);
+    dragElement(selector);
 }
 
 
@@ -29,7 +29,7 @@ function dragElement(elmnt) {
     }
 
     function dragMouseDown(e) {
-        animationRotation();
+        // animationRotation();
 
         e = e || window.event;
         e.preventDefault();
@@ -45,21 +45,23 @@ function dragElement(elmnt) {
 
         pos2 = e.clientX;
         leftSpace = elmnt.offsetLeft - pos1;
-        rLeftSpace = rElmnt.offsetLeft + pos1;
-
-        if (leftSpace < 43) { leftSpace = 43 }
-        if (rLeftSpace > 193) { rLeftSpace = 193 }
-        if (leftSpace > 72) {
-            leftSpace = 72;
-            operationSecondSlide();
+console.log(leftSpace);
+        if (leftSpace < 105) { leftSpace = 105 }
+        if (leftSpace > 155) { leftSpace = 155 }
+        if (leftSpace < 105) {
+            leftSpace = 105;
+            // operationOneGb();
+        }
+        if (leftSpace > 155) {
+            leftSpace = 155;
+            // operationTwoGb();
         }
         elmnt.style.left = leftSpace + "px";
-        rElmnt.style.left = rLeftSpace + "px";
     }
 
     function closeDragElement() {
         document.onmouseup = null;
         document.onmousemove = null;
-        setTimeout(initialPosition, 3000);
+        // setTimeout(initialPosition, 3000);
     }
 }
