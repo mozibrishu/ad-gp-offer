@@ -22,7 +22,7 @@ else {
 
 
 function dragElement(elmnt) {
-    var pos1 = 0, pos2 = 0;
+    var pos1 = 0, pos2 = 0, checker =1;
     if (document.getElementById(elmnt.id + "header")) {
         document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
     } else {
@@ -49,11 +49,13 @@ function dragElement(elmnt) {
         console.log(leftSpace);
         if (leftSpace < 65) { leftSpace = 65 }
         if (leftSpace > 195) { leftSpace = 195 }
-        if (leftSpace <= 105) {
+        if (leftSpace <= 105 && checker) {
             operationOneGb();
+            checker = 0;
         }
-        if (leftSpace >= 155) {
+        if (leftSpace >= 155 && checker) {
             operationTwoGb();
+            checker = 0;
         }
         elmnt.style.left = leftSpace + "px";
     }
@@ -130,7 +132,7 @@ function operationTwoGb() {
 
 // touch Code
 function dragElementMobile(elmnt) {
-    var pos1 = 0, pos2 = 0;
+    var pos1 = 0, pos2 = 0, checker=1; 
     if (document.getElementById(elmnt.id + "header")) {
         document.getElementById(elmnt.id + "header").ontouchstart = dragMouseDown;
     } else {
@@ -156,11 +158,13 @@ function dragElementMobile(elmnt) {
         console.log(leftSpace);
         if (leftSpace < 65) { leftSpace = 65 }
         if (leftSpace > 195) { leftSpace = 195 }
-        if (leftSpace <= 105) {
+        if (leftSpace <= 105 && checker) {
             operationOneGb();
+            checker = 0;
         }
-        if (leftSpace >= 155) {
+        else if (leftSpace >= 155 && checker) {
             operationTwoGb();
+            checker = 0;
         }
         elmnt.style.left = leftSpace + "px";
     }
