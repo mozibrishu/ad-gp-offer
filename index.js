@@ -75,12 +75,14 @@ function operationOneGb() {
         $(".Onegb").removeClass("scaleUp-animation");
         $(".Onegb").addClass("oneGbCardRemove-animation");
         $(".Twogb").addClass("twoGbCardSecondaryRemove-animation");
+        setTimeout(()=>{
+            $(".cta1").addClass("cta1Remove-animation");
+        },300);
 
         setTimeout(() => {
             $(".Onegb").addClass("hidden");
             $(".Twogb").addClass("hidden");
             $(".arrows").addClass("hidden");
-            $(".cta1").addClass("cta1Remove-animation");
 
             $(".OnegbCopy").removeClass("hidden");
             $(".buynow").removeClass("hidden");
@@ -103,12 +105,14 @@ function operationTwoGb() {
         $(".Twogb").removeClass("scaleUp-animation");
         $(".Onegb").addClass("oneGbCardSecondaryRemove-animation");
         $(".Twogb").addClass("twoGbCardRemove-animation");
+        setTimeout(()=>{
+            $(".cta1").addClass("cta1Remove-animation");
+        },300);
 
         setTimeout(() => {
             $(".Onegb").addClass("hidden");
             $(".Twogb").addClass("hidden");
             $(".arrows").addClass("hidden");
-            $(".cta1").addClass("cta1Remove-animation");
 
             $(".TwogbCopy").removeClass("hidden");
             $(".buynow").removeClass("hidden");
