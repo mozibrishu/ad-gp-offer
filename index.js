@@ -45,14 +45,13 @@ function dragElement(elmnt) {
 
         pos2 = e.clientX;
         leftSpace = elmnt.offsetLeft - pos1;
-console.log(leftSpace);
-        if (leftSpace < 105) { leftSpace = 105 }
-        if (leftSpace > 155) { leftSpace = 155 }
-        if (leftSpace < 105) {
-            leftSpace = 105;
-            // operationOneGb();
+        console.log(leftSpace);
+        if (leftSpace < 65) { leftSpace = 65 }
+        if (leftSpace > 195) { leftSpace = 195 }
+        if (leftSpace <= 105) {
+            operationOneGb();
         }
-        if (leftSpace > 155) {
+        if (leftSpace >= 155) {
             leftSpace = 155;
             // operationTwoGb();
         }
@@ -64,4 +63,16 @@ console.log(leftSpace);
         document.onmousemove = null;
         // setTimeout(initialPosition, 3000);
     }
+}
+
+
+function operationOneGb() {
+    // Onegb.classList ? Onegb.className += ' scaleUp-animation' : Onegb.classList.add('scaleUp-animation');
+    $(".Onegb").addClass("scaleUp-animation");
+    setTimeout(() => {
+        $(".copy1").addClass("textSlideRemove-animation");
+        $(".selector").addClass("selectorRemove-animation");
+        $(".Onegb").removeClass("scaleUp-animation");
+        $(".Onegb").addClass("oneGbCardRemove-animation");
+    }, 500);
 }

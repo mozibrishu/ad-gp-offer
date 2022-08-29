@@ -59,12 +59,13 @@ html {
     top: 66px;
     left: 42px;
 }
+
 .TwogbCopy {
     top: 66px;
     left: 42px;
 }
 
-.buynow{
+.buynow {
     top: 194px;
     left: 107px;
 }
@@ -81,79 +82,151 @@ html {
 
 /* animation */
 /* buy now  */
-.pulse-animation{
+.pulse-animation {
     animation: pulse 1.2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-    50%{
+    50% {
         transform: scale(.95);
-    }    
-    0%,100%{
+    }
+
+    0%,
+    100% {
         transform: scale(1);
     }
 }
 
 /* arrow animation */
-.slowSlide-animation{
+.slowSlide-animation {
     animation: slide 1.2s ease-in-out infinite;
 }
 
 @keyframes slide {
-    0%,100%{
+
+    0%,
+    100% {
         transform: translateX(5px);
-    }    
-    50%{
+    }
+
+    50% {
         transform: translate(-5px);
     }
 }
 
 /* text animation */
-.textSlide-animation{
+.textSlide-animation {
     animation: textSlide 1.3s ease-in-out;
 }
 
 @keyframes textSlide {
-    0%{
+    0% {
         transform: translateY(-100px);
         opacity: .6;
-    }    
-    100%{
+    }
+
+    100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
 
+.textSlideRemove-animation {
+    animation: textSlideRemove 1s ease-in-out forwards;
+}
+
+@keyframes textSlideRemove {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: .6;
+    }
+}
+
 /* 1gb animation */
-.oneGbCard-animation{
+.oneGbCard-animation {
     animation: oneGbCard 1.2s ease-in-out;
 }
 
 @keyframes oneGbCard {
-    0%{
+    0% {
         transform: translateX(-50px);
-    }    
-    70%{
+    }
+
+    70% {
         transform: translateX(5px);
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
+    }
+}
+
+.oneGbCardRemove-animation {
+    animation: oneGbCardRemove 1s ease-in-out forwards;
+}
+
+@keyframes oneGbCardRemove {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-40px);
+        opacity: .6;
     }
 }
 
 /* 2gb animation */
-.twoGbCard-animation{
+.twoGbCard-animation {
     animation: twoGbCard 1.2s ease-in-out;
 }
 
 @keyframes twoGbCard {
-    0%{
+    0% {
         transform: translateX(50px);
-    }    
-    70%{
+    }
+
+    70% {
         transform: translateX(-5px);
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
+    }
+}
+
+.scaleUp-animation {
+    animation: scaleUp .5s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+/*  */
+.selectorRemove-animation {
+    animation: selectorRemove 1s ease-in-out forwards;
+}
+
+@keyframes selectorRemove {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100px);
+        opacity: .6;
     }
 }
