@@ -117,9 +117,9 @@ function operationTwoGb() {
             $(".TwogbCopy").removeClass("hidden");
             $(".buynow").removeClass("hidden");
             $(".TwogbCopy").addClass("OnegbCopy-animation");
-            $(".buynow").addClass("OnegbCopy-animation");
+            $(".buynow").addClass("buynow-animation");
             setTimeout(() => { 
-                $(".buynow").removeClass("OnegbCopy-animation");
+                $(".buynow").removeClass("buynow-animation");
                 $(".buynow").addClass("pulse-animation"); }, 800)
 
 
