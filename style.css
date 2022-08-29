@@ -15,4 +15,67 @@ html {
     position: relative;
     overflow: hidden;
     background-color: antiquewhite;
+    background-image: url('images/gpv1b1.jpg');
 }
+
+.bg {
+    top: 0px;
+    left: 0px;
+}
+
+.copy1 {
+    top: 26px;
+    left: 81px;
+}
+
+.Onegb {
+    top: 104px;
+    left: 36px;
+}
+
+.Twogb {
+    top: 104px;
+    left: 154px;
+}
+
+.arrows {
+    top: 199px;
+    left: 108px;
+}
+
+.selector {
+    top: 173px;
+    left: 131px;
+}
+
+.cta1 {
+    top: 227px;
+    left: 46px;
+}
+
+
+
+.OnegbCopy {
+    top: 66px;
+    left: 42px;
+}
+.TwogbCopy {
+    top: 66px;
+    left: 42px;
+}
+
+.buynow{
+    top: 194px;
+    left: 107px;
+}
+
+
+/*-------------------- */
+.hidden {
+    display: none;
+}
+
+.absolute {
+    position: absolute;
+}
+
