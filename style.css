@@ -15,7 +15,7 @@ html {
     position: relative;
     overflow: hidden;
     background-color: antiquewhite;
-    background-image: url('images/gpv1b1.jpg');
+    /* background-image: url('images/gpv1b1.jpg'); */
 }
 
 .bg {
@@ -79,3 +79,81 @@ html {
     position: absolute;
 }
 
+/* animation */
+/* buy now  */
+.pulse-animation{
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    50%{
+        transform: scale(.95);
+    }    
+    0%,100%{
+        transform: scale(1);
+    }
+}
+
+/* arrow animation */
+.slowSlide-animation{
+    animation: slide 1.2s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0%,100%{
+        transform: translateX(5px);
+    }    
+    50%{
+        transform: translate(-5px);
+    }
+}
+
+/* text animation */
+.textSlide-animation{
+    animation: textSlide 1.3s ease-in-out;
+}
+
+@keyframes textSlide {
+    0%{
+        transform: translateY(-100px);
+        opacity: .6;
+    }    
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* 1gb animation */
+.oneGbCard-animation{
+    animation: oneGbCard 1.2s ease-in-out;
+}
+
+@keyframes oneGbCard {
+    0%{
+        transform: translateX(-50px);
+    }    
+    70%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* 2gb animation */
+.twoGbCard-animation{
+    animation: twoGbCard 1.2s ease-in-out;
+}
+
+@keyframes twoGbCard {
+    0%{
+        transform: translateX(50px);
+    }    
+    70%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
