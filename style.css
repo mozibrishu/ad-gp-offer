@@ -131,8 +131,9 @@ html {
     }
 }
 
+/* Text Remove */
 .textSlideRemove-animation {
-    animation: textSlideRemove 1s ease-in-out forwards;
+    animation: textSlideRemove 1.3s ease-in-out forwards;
 }
 
 @keyframes textSlideRemove {
@@ -143,13 +144,13 @@ html {
 
     100% {
         transform: translateY(-100px);
-        opacity: .6;
+        opacity: .3;
     }
 }
 
 /* 1gb animation */
 .oneGbCard-animation {
-    animation: oneGbCard 1.2s ease-in-out;
+    animation: oneGbCard 1.3s ease-in-out;
 }
 
 @keyframes oneGbCard {
@@ -158,7 +159,7 @@ html {
     }
 
     70% {
-        transform: translateX(5px);
+        transform: translateX(6px);
     }
 
     100% {
@@ -166,6 +167,7 @@ html {
     }
 }
 
+/* one gb card remv */
 .oneGbCardRemove-animation {
     animation: oneGbCardRemove 1s ease-in-out forwards;
 }
@@ -174,16 +176,35 @@ html {
     0% {
         transform: translateX(0px);
         opacity: 1;
+        height: 72px;
+        width: 118px;
     }
     100% {
-        transform: translateX(-40px);
-        opacity: .6;
+        transform: translateX(-50px);
+        opacity: .3;
+        height: 72px;
+        width: 118px;
+    }
+}
+/* secondary */
+.oneGbCardSecondaryRemove-animation {
+    animation: oneGbCardSecondaryRemove 1s ease-in-out forwards;
+}
+
+@keyframes oneGbCardSecondaryRemove {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50px);
+        opacity: .3;
     }
 }
 
 /* 2gb animation */
 .twoGbCard-animation {
-    animation: twoGbCard 1.2s ease-in-out;
+    animation: twoGbCard 1.3s ease-in-out;
 }
 
 @keyframes twoGbCard {
@@ -192,7 +213,7 @@ html {
     }
 
     70% {
-        transform: translateX(-5px);
+        transform: translateX(-6px);
     }
 
     100% {
@@ -200,17 +221,53 @@ html {
     }
 }
 
+/* two gb card remv */
+.twoGbCardRemove-animation {
+    animation: twoGbCardRemove 1s ease-in-out forwards;
+}
+
+@keyframes twoGbCardRemove {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+        height: 72px;
+        width: 118px;
+    }
+    100% {
+        transform: translateX(50px);
+        opacity: .3;
+        height: 72px;
+        width: 118px;
+    }
+}
+.twoGbCardSecondaryRemove-animation {
+    animation: twoGbCardSecondaryRemove 1s ease-in-out forwards;
+}
+
+@keyframes twoGbCardSecondaryRemove {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50px);
+        opacity: .3;
+    }
+}
+
+/* scaleup problem */
 .scaleUp-animation {
     animation: scaleUp .5s ease-in-out forwards;
 }
 
 @keyframes scaleUp {
     0% {
-        transform: scale(1);
+        height: 68px;
+        width: 110px;
     }
-
     100% {
-        transform: scale(1.15);
+        height: 72px;
+        width: 118px;
     }
 }
 
@@ -228,5 +285,51 @@ html {
     100% {
         transform: translateY(100px);
         opacity: .6;
+    }
+}
+
+.cta1Remove-animation {
+    animation: cta1Remove 1s ease-in-out forwards;
+}
+
+@keyframes cta1Remove {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(50px);
+        opacity: .6;
+    }
+}
+
+.OnegbCopy-animation{
+    animation: OnegbCopy 1s ease-in-out forwards;
+}
+@keyframes OnegbCopy {
+    0% {
+        transform: translate(-5px, -5px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.buynow-animation{
+    animation: buynow 1s ease-in-out forwards;
+}
+@keyframes buynow {
+    0% {
+        transform: translate(-5px, 5px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
 }
